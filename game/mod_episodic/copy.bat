@@ -1,0 +1,1 @@
+Xcopy .\bin "C:\Program Files (x86)\Steam\SteamApps\sourcemods\smmod_gen2\bin" 
