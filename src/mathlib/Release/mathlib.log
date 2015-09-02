@@ -1,5 +1,5 @@
-﻿Build started 8/31/2015 3:53:48 AM.
-     1>Project "H:\SOURCE_SDK_CODE\smmod\src\mathlib\mathlib.vcxproj" on node 2 (Build target(s)).
+﻿Build started 9/1/2015 5:41:21 AM.
+     1>Project "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\mathlib\mathlib.vcxproj" on node 2 (Build target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\mathlib.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\mathlib.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -14,8 +14,8 @@
          
          :VCEnd
        Lib:
-         mathlib.vcxproj -> H:\SOURCE_SDK_CODE\smmod\src\mathlib\..\lib\public\.\mathlib.lib
-     1>Done Building Project "H:\SOURCE_SDK_CODE\smmod\src\mathlib\mathlib.vcxproj" (Build target(s)).
+         mathlib.vcxproj -> H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\mathlib\..\lib\public\.\mathlib.lib
+     1>Done Building Project "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\mathlib\mathlib.vcxproj" (Build target(s)).
 
 Build succeeded.
 

@@ -10,7 +10,6 @@ class CViewModelArms : public CBaseAnimating
 	DECLARE_CLASS(CViewModelArms, CBaseAnimating);
 	DECLARE_SERVERCLASS();
 public:
-	CViewModelArms(){ EnableDynamicModels(); }
 };
 LINK_ENTITY_TO_CLASS(viewmodelarms, CViewModelArms);
 IMPLEMENT_SERVERCLASS_ST(CViewModelArms, DT_ViewModelArms)

@@ -1,5 +1,5 @@
-﻿Build started 8/31/2015 3:53:48 AM.
-     1>Project "H:\SOURCE_SDK_CODE\smmod\src\tier1\tier1.vcxproj" on node 3 (Build target(s)).
+﻿Build started 9/1/2015 5:41:21 AM.
+     1>Project "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\tier1\tier1.vcxproj" on node 3 (Build target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\tier1.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\tier1.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -14,8 +14,8 @@
          
          :VCEnd
        Lib:
-         tier1.vcxproj -> H:\SOURCE_SDK_CODE\smmod\src\tier1\..\lib\public\.\tier1.lib
-     1>Done Building Project "H:\SOURCE_SDK_CODE\smmod\src\tier1\tier1.vcxproj" (Build target(s)).
+         tier1.vcxproj -> H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\tier1\..\lib\public\.\tier1.lib
+     1>Done Building Project "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\tier1\tier1.vcxproj" (Build target(s)).
 
 Build succeeded.
 
