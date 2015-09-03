@@ -1,5 +1,5 @@
-﻿Build started 9/1/2015 5:41:22 AM.
-     1>Project "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\server_episodic.vcxproj" on node 2 (Build target(s)).
+﻿Build started 9/2/2015 8:40:07 PM.
+     1>Project "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\server_episodic.vcxproj" on node 2 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\mod_episodic\bin\.\server.dll for /f "delims=" %%A in ('attrib "..\..\..\game\mod_episodic\bin\.\server.dll"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -8,27 +8,19 @@
          if ERRORLEVEL 1 exit /b 1
          
          :VCEnd
-       Link:
-         server_episodic.vcxproj -> H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\.\Release_mod_episodic\server.dll
-       PostBuildEvent:
-         if not exist "..\..\..\game\mod_episodic\bin\." mkdir "..\..\..\game\mod_episodic\bin\."
-         copy "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\Release_mod_episodic\server.dll" "..\..\..\game\mod_episodic\bin\.\server.dll"
-         if ERRORLEVEL 1 goto BuildEventFailed
-         if exist "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\Release_mod_episodic\server.map" copy "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\Release_mod_episodic\server.map" ..\..\..\game\mod_episodic\bin\.\server.map
-         copy "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\Release_mod_episodic\server.pdb" ..\..\..\game\mod_episodic\bin\.\server.pdb
-         if ERRORLEVEL 1 goto BuildEventFailed
-         goto BuildEventOK
-         :BuildEventFailed
-         echo *** ERROR! PostBuildStep FAILED for Server (Episodic)! EXE or DLL is probably running. ***
-         del /q "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\Release_mod_episodic\server.dll"
-         exit 1
-         :BuildEventOK
-         
-         :VCEnd
-                 1 file(s) copied.
-                 1 file(s) copied.
-     1>Done Building Project "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\server_episodic.vcxproj" (Build target(s)).
+         This VCPROJ is out of sync with its VPC scripts.
+           server_episodic.vpc mismatches (0x967a1a19 vs 0xc8b813f3).
+           Please use VPC to re-generate!
+           
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: The command "if EXIST ..\..\..\game\mod_episodic\bin\.\server.dll for /f "delims=" %%A in ('attrib "..\..\..\game\mod_episodic\bin\.\server.dll"') do set valveTmpIsReadOnly="%%A"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: if "%valveTmpIsReadOnlyLetter%"=="R" del /q "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\Release_mod_episodic\"server.dll
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "server_episodic.vcxproj"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: if ERRORLEVEL 1 exit /b 1
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: 
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: :VCEnd" exited with code 1.
+     1>Done Building Project "H:\SOURCE_SDK_CODE\SMMOD-GEN2-CODE\src\game\server\server_episodic.vcxproj" (Rebuild target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.12
+Time Elapsed 00:00:00.72

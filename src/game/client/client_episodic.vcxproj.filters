@@ -37,6 +37,9 @@
     <Filter Include="Source Files\Sixense">
       <UniqueIdentifier>{5595354B-BE1B-8C7C-B3CB-72257228B6D3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\SMMOD">
+      <UniqueIdentifier>{27778D27-3309-1C2E-EE18-78B67883DB27}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files\Temporary Entities">
       <UniqueIdentifier>{9EECF4A3-83FE-A929-1B71-69EABF89B7EA}</UniqueIdentifier>
     </Filter>
@@ -45,9 +48,6 @@
     </Filter>
     <Filter Include="VPC Scripts">
       <UniqueIdentifier>{A40EE377-781A-C6B9-0C7C-B3BE118D248E}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\SMMOD">
-      <UniqueIdentifier>{9798e4c2-c392-49d6-94e3-71eebb5e1d29}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -3217,6 +3217,9 @@
     <ClCompile Include="..\..\game\shared\sixense\sixense_convars.cpp">
       <Filter>Source Files\Sixense</Filter>
     </ClCompile>
+    <ClCompile Include="smmod\c_viewmodelarms.cpp">
+      <Filter>Source Files\SMMOD</Filter>
+    </ClCompile>
     <ClCompile Include="c_basetempentity.cpp">
       <Filter>Source Files\Temporary Entities</Filter>
     </ClCompile>
@@ -3414,9 +3417,6 @@
     </ClCompile>
     <ClCompile Include="toolframework_client.cpp">
       <Filter>Tool Framework</Filter>
-    </ClCompile>
-    <ClCompile Include="c_viewmodelarms.cpp">
-      <Filter>Source Files\SMMOD</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
