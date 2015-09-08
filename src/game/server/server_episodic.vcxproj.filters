@@ -1790,6 +1790,12 @@
     <ClInclude Include="toolframework_server.h">
       <Filter>Tools Framework</Filter>
     </ClInclude>
+    <ClInclude Include="smmod\mapadd.h">
+      <Filter>Source Files\SMMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="smmod\simulated_bullet.h">
+      <Filter>Source Files\SMMOD</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gamedll_replay.cpp">
@@ -3516,6 +3522,12 @@
     </ClCompile>
     <ClCompile Include="toolframework_server.cpp">
       <Filter>Tools Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="smmod\mapadd.cpp">
+      <Filter>Source Files\SMMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="smmod\simulated_bullet.cpp">
+      <Filter>Source Files\SMMOD</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

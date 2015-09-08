@@ -861,7 +861,10 @@ bool CServerGameDLL::GameInit( void )
 	{
 		gameeventmanager->FireEvent( event );
 	}
-
+	//Place mapadd here
+#ifdef SMMOD
+	Msg("I have been loaded!");
+#endif
 	return true;
 }
 

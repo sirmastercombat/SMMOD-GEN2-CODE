@@ -130,7 +130,13 @@ public:
 
 // SERVER DLL
 #ifdef SMMOD
+public:
 	bool					m_bHasDynamicArms;
+	Vector					vecIronsightPosOffset;
+	QAngle					angIronsightAngOffset;
+	float					flIronsightFOVOffset;
+protected:
+private:
 #endif
 };
 

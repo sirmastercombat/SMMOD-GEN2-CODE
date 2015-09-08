@@ -1,7 +1,7 @@
 #include "cbase.h"
 #include "mapadd.h"
 #include "filesystem.h"
-#include "weapon_custom.h"
+//#include "weapon_custom.h"
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"

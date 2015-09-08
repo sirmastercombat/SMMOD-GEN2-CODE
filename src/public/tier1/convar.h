@@ -160,7 +160,9 @@ private:
 	// Static data
 	const char 					*m_pszName;
 	const char 					*m_pszHelpString;
-	
+#ifdef SMMOD
+public:
+#endif
 	// ConVar flags
 	int							m_nFlags;
 
@@ -411,7 +413,10 @@ private:
 	float						m_fMinVal;
 	bool						m_bHasMax;
 	float						m_fMaxVal;
-	
+
+#ifdef SMMOD
+public:
+#endif
 	// Call this function when ConVar changes
 	FnChangeCallback_t			m_fnChangeCallback;
 };

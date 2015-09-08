@@ -211,11 +211,13 @@ private:
 	
 	//SMMOD Custom Code
 #ifdef SMMOD
-
+	public:
 #if !defined CLIENT_DLL
 	virtual void HandleAnimEvent(animevent_t *pEvent);
 #endif
-
+	void		CalcIronsights(Vector &pos, QAngle &ang);
+protected:
+private:
 #endif
 };
 
