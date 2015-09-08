@@ -2030,6 +2030,11 @@ void CBaseEntity::FireBullets( const FireBulletsInfo_t &info )
 		CTakeDamageInfo dmgInfo( this, pAttacker, flCumulativeDamage, nDamageType );
 		gamestats->Event_WeaponHit( pPlayer, info.m_bPrimaryAttack, pPlayer->GetActiveWeapon()->GetClassname(), dmgInfo );
 	}
+
+#ifdef SMMOD
+	HandleBulletPenetration(info, tr, vecDir, &traceFilter);
+#endif
+
 #endif
 }
 

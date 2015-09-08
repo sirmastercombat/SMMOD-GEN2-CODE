@@ -3418,6 +3418,9 @@
     <ClCompile Include="toolframework_client.cpp">
       <Filter>Tool Framework</Filter>
     </ClCompile>
+    <ClCompile Include="smmod\c_simulated_bullet.cpp">
+      <Filter>Source Files\SMMOD</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

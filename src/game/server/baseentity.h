@@ -1562,6 +1562,10 @@ private:
 	// Handle shot entering water
 	void HandleShotImpactingGlass( const FireBulletsInfo_t &info, const trace_t &tr, const Vector &vecDir, ITraceFilter *pTraceFilter );
 
+#ifdef SMMOD
+	// Should we go through stuff?
+	void HandleBulletPenetration(const FireBulletsInfo_t &info, const trace_t &tr, const Vector &vecDir, ITraceFilter *pTraceFilter, int TimesPenitrate = 1);
+#endif
 	// Should we draw bubbles underwater?
 	bool ShouldDrawUnderwaterBulletBubbles();
 

@@ -664,6 +664,10 @@ enum FireBulletsFlags_t
 	FIRE_BULLETS_DONT_HIT_UNDERWATER = 0x2,		// If the shot hits its target underwater, don't damage it
 	FIRE_BULLETS_ALLOW_WATER_SURFACE_IMPACTS = 0x4,	// If the shot hits water surface, still call DoImpactEffect
 	FIRE_BULLETS_TEMPORARY_DANGER_SOUND = 0x8,		// Danger sounds added from this impact can be stomped immediately if another is queued
+#ifdef SMMOD
+	FIRE_BULLETS_USEPENITRATION_DEPTH = 0x16,		// Tells the bullet penetration system that we are using bullet thickness for penetration calculation
+	FIRE_BULLETS_USEPENITRATION_COUNT = 0x32,		// Tells the bullet penetration system that we are using a counter to factor bullet penetration
+#endif
 };
 
 
@@ -688,9 +692,17 @@ struct FireBulletsInfo_t
 		m_vecDirShooting.Init( VEC_T_NAN, VEC_T_NAN, VEC_T_NAN );
 #endif
 		m_bPrimaryAttack = true;
+#ifdef SMMOD
+		m_iPenetrationCount = 1;
+		m_flPenetrationForce = 96.0f;
+#endif
 	}
 
-	FireBulletsInfo_t( int nShots, const Vector &vecSrc, const Vector &vecDir, const Vector &vecSpread, float flDistance, int nAmmoType, bool bPrimaryAttack = true )
+	FireBulletsInfo_t( int nShots, const Vector &vecSrc, const Vector &vecDir, const Vector &vecSpread, float flDistance, int nAmmoType, bool bPrimaryAttack = true
+#ifdef SMMOD
+		, int iPenetrationCount = 0, float flPenetrationDeph = 0.0f// I hope this is not out of standard.
+#endif
+		)
 	{
 		m_iShots = nShots;
 		m_vecSrc = vecSrc;
@@ -706,6 +718,10 @@ struct FireBulletsInfo_t
 		m_pAdditionalIgnoreEnt = NULL;
 		m_flDamageForceScale = 1.0f;
 		m_bPrimaryAttack = bPrimaryAttack;
+#ifdef SMMOD
+		m_iPenetrationCount = iPenetrationCount;
+		m_flPenetrationForce = flPenetrationDeph;
+#endif
 	}
 
 	int m_iShots;
@@ -722,6 +738,10 @@ struct FireBulletsInfo_t
 	CBaseEntity *m_pAttacker;
 	CBaseEntity *m_pAdditionalIgnoreEnt;
 	bool m_bPrimaryAttack;
+#ifdef SMMOD
+	int m_iPenetrationCount;
+	float m_flPenetrationForce;
+#endif
 };
 
 //-----------------------------------------------------------------------------
